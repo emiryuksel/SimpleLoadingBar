@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: gray;
+    color: white;
+}
+
+.loadingText{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 505px;
+    text-align: center;
+    position: relative;     /* Important: Without this code, the bar would extend outside the screen. */
+
+    font-size: 20px;
+}
+
+.counter{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.loadingBarFront{
+    height: 10px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    width: 0%;
+    position: absolute;
+}
+
+.loadingBarGround{
+    height: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+}
+
+.confirmLogo{
+    font-size: 50px;
+    position: absolute;
+    top: 130%;  /* Adjust to your desired position */
+    left: 50%;
+    transform: translate(-50%, -50%); /* To center */
+    
+}
+
